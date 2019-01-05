@@ -6,7 +6,7 @@ import (
 	fizzbuzz "github.com/infernalslam/gooooooo"
 )
 
-func TestfizzbuzzShouldSayOne(t *testing.T) {
+func TestFizzbuzzShouldSayOne(t *testing.T) {
 	result := fizzbuzz.Say(1)
 	expected := "1"
 	if result != expected {
@@ -14,7 +14,7 @@ func TestfizzbuzzShouldSayOne(t *testing.T) {
 	}
 }
 
-func TestfizzbuzzShouldSayTwo(t *testing.T) {
+func TestFizzbuzzShouldSayTwo(t *testing.T) {
 	result := fizzbuzz.Say(2)
 	expected := "2"
 	if result != expected {
@@ -22,9 +22,17 @@ func TestfizzbuzzShouldSayTwo(t *testing.T) {
 	}
 }
 
-func TestfizzbuzzShouldSayFizz(t *testing.T) {
+func TestFizzbuzzShouldSayFizz(t *testing.T) {
 	result := fizzbuzz.Say(3)
 	expected := "Fizz"
+	if result != expected {
+		t.Errorf("it should say %q but get %q", expected, result)
+	}
+}
+
+func TestFizzbuzzShouldSayBuzz(t *testing.T) {
+	result := fizzbuzz.Say(5)
+	expected := "Buzz"
 	if result != expected {
 		t.Errorf("it should say %q but get %q", expected, result)
 	}
