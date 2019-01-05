@@ -1,14 +1,19 @@
 package main
 
-import (
-	"fmt"
+import "fmt"
 
-	"github.com/infernalslam/gooooooo/cap"
-)
+type dog struct {
+	Name string
+}
+
+// AnimalName AnimalName
+func AnimalName(d dog) string {
+	return d.Name
+}
 
 func main() {
-	txt1 := cap.Cap(1, 1, 1, 1)
-	txt2 := cap.Cap(2, 1, 1, 1)
-	fmt.Println(txt1)
-	fmt.Println(txt2)
+	d := dog{
+		Name: "Two",
+	}
+	fmt.Println(d.Name)
 }
