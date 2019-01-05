@@ -1,1 +1,1 @@
-module github.com/infernalslam/gooooooo
+module github.com/infernalslam/fizzbuzz
