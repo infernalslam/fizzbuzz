@@ -4,7 +4,7 @@ import (
 	"strconv"
 )
 
-// Cap must
+// Cap captcha captcha captcha captcha
 func Cap(n1, n2, n3, n4 int) string {
 	text := ""
 	if n1 == 1 {
@@ -25,15 +25,7 @@ func numberic(n int) string {
 }
 
 func operation(n3 int) string {
-	text := ""
-	if n3 == 1 {
-		text += " + "
-	} else if n3 == 2 {
-		text += " - "
-	} else if n3 == 3 {
-		text += " / "
-	} else if n3 == 4 {
-		text += " * "
-	}
-	return text
+	// refactor code
+	opt := [4]string{" + ", " - ", " / ", " * "}
+	return opt[n3-1]
 }
